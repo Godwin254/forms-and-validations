@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyton Validator</title>
+    <script src="https://kit.fontawesome.com/a9f6e9c98f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="validate.js"></script>
+</head>
+<body>
+  <!--my login form-->
+<!--contains the whole page-->
+  <div class="main-container">
+
+    <!--contains the navigation bar-->
+    
+        <!--navigation options-->
+    <div class="nav-bar">
+        <!--logo container-->
+        <p href="#" id="logo" class="my-logo">Crypto</p>
+       
+        <a href="#">Contact</a>
+        <a  class="active" href="#">Sign up</a>
+        <a href="#">About</a>
+        <a href="#">Home</a>
+            
+    </div>
+
+    <!--contains the form-->
+    <div class="main-form">
+
+        <div id="error"></div>
+        <form action="#"  class="my-form" method="POST">
+
+            <h3  style="text-align: center; color: blue;">Create account</h3>
+
+            <label for="uname">Username</label>
+            
+            <input type="text" class="active-on success" id="user-name" name="username" placeholder="Enter username">
+            <i class="far fa-check-circle" style="color: #46a049;"></i>
+            <small >error message</small> 
+
+            <label for="email">Email</label>
+            <input type="email" class="error-on error" id="email1" name="email" placeholder="Enter email">
+            <i class="far fa-check-circle" style="color: #46a049;"></i>
+            <small >error message</small>
+
+            <label for="passcode">Password</label>
+            <input type="password" id="psw1" name="password" placeholder="Password">
+            <i class="far fa-check-circle" style="color: #46a049;"></i>
+            <small style="float: right;">error message</small>
+           </br>
+           <!-- <label for="uname">Username</label>-->
+            <input type="password" id="psw2" name="confirm-password" placeholder="Confirm password">
+            <i class="far fa-check-circle" style="color: #46a049;"></i>
+            <small >error message</small>
+           <!--
+            <input type="checkbox"  name="check-box">
+            <label for="check_box">agree to terms</label>
+           -->
+            <div class="btn-container">
+               <button type="button"  id="btn1" class="btnx">Sign up</button>
+               <a href="#" id="btn2" class="btn-link" style="font-size: smaller;">Forgot password</a>
+            </div>
+        </form>
+
+    </div>
+
+    <!--footer section-->
+    <div class="footer">
+
+    </div>
+
+  </div>
+    
+</body>
+</html>
