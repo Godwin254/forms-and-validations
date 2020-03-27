@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>sign up</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a9f6e9c98f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+     <form action="" class="form" method = "GET">
+    
+          <div class="title" style = "text-align:center;padding:5px">
+            <h3 style = "text-align:center;">Sign in</ h3>
+          </div>
+          
+          <div id="alerto" style = "color: red;font-size: 15px;text-align: center">
+            <p> </p>
+          </div>
+          
+          <div id="val1" >
+            <label for = "fname">First name</label>
+            <input type = "text" class = "fname" name = "fname" placeholder = "Username">
+            <div id = "error1" style = "color:red;font-size:10px;text-align:center;padding: 0;">
+              <p></p>
+            </div>
+          </div>
+          
+          <div id="val2" >
+            <label for = "fname">Email</label>
+            <input type = "email" class = "email" name = "fname" placeholder = "Enter email">
+            <div id = "error2" style = "color:red;font-size:10px;text-align:center;padding: 0;">
+              <p></p>
+            </div>
+          </div>
+          
+          <div id="val3" >
+            <label for = "password1">Password</label>
+            <input type = "password" class = "code1" name = "password" placeholder = "Password">
+            <div id = "error3" style = "color:red;font-size:10px;text-align:center;padding: 0;">
+              <p></p>
+            </div>
+          </div>
+          
+          <div id="val4" >
+            <label for = "password2"></label>
+            <input type = "password" class = "code2" name = "password" placeholder = "Confirm password">
+            <div id = "error4" style = "color:red;font-size:10px;text-align:center;padding: 0;">
+              <p></p>
+            </div>
+          </div>
+          
+          <div id="btnx">
+            <button type = "submit" id = "btn1" onclick = "myPascodes()" >Submit</button>
+            <button type = "submit" id = "btn2">cancel</button>
+            
+          </div>
+          
+          <div class="link">
+            <a href = "#" style= "text-align: center;">Dont have an account</a>
+            <div class="pop">  </div>
+          </div>
+          <!--sign in social icons-->
+          <div class="social">
+            
+            <div class ="google">
+              <i class="fab fa-google">googe</i>
+            </div>
+            
+            <div class="txt">
+              <p>or</p>
+            </div>
+            
+            <div class = "facebook">
+              <i class="fab fa-facebook">facebook</i>
+            </div> 
+            
+          </div>
+          
+        </form>
+    
+    
+  
+</body>
+<script src="validate.js"></script>
+</html>

@@ -1,0 +1,124 @@
+/*styling the header*/
+.title {
+     font-size: 20px;
+     font-family: sans-serif;
+   }
+   .title h3{
+     font-size: 20px;
+     font-family: sans-serif;
+   }
+   /*styling the form*/
+   .form{
+     position: relative;
+     background: #eee;
+     width: 200px;
+     padding: 30px;
+     padding-bottom: 2px;
+     padding-top: 2px;
+     border: none;
+     border-radius: 4px;
+     margin: 60px auto;
+     
+   }
+   /*styling the labels*/
+   .form label{
+     display: inline-block;
+     color: #004;
+     font-size: 12px;
+     font-weight: bold;
+     margin-bottom: 3px;
+     
+   }
+   /*styling the inputs*/
+   .form input{
+     display: block;
+     margin: 3px;
+     border: none;
+     padding: 5px;
+     border-radius: 4px;
+     
+   }
+   /*styling the button*/
+   #btnx button{
+     margin-top: 20px;
+     display: block-inline;
+     border: none;
+     padding: 5px;
+     border-radius: 5px;
+     
+   }
+   /*styling button#1 */
+   #btnx #btn1 {
+     color: white;
+     background-color: #2196F3;
+     cursor: pointer;
+   }
+   /*setting hover property to the button*/
+   #btnx #btn1:hover{
+     background: #0b7dda;
+   }
+   /*styling the second button#2*/
+   #btnx #btn2{
+     background: none;
+     cursor: pointer;
+   }
+   /*styling the link*/
+   .link{
+     display: block-inline;
+     margin: 20px auto;
+     color:red;
+     font-size: 10px;
+     text-align: center
+   }
+   /*style the a tag*/
+   .link a{
+     display: block-inline;
+     margin: 20px auto;
+     color:red;
+     font-size: 10px;
+     text-align: center
+   }
+   /*setting hover property on */
+   .link a:hover{
+     color: blue;
+   }
+   /*style the sign in option*/
+   .social{
+     display: flex;
+     position: relative;
+     flex-direction: 10px; 
+     margin-top: 20px;
+     visibility: hidden;
+   }
+   /*style the google icon*/
+   .google i{
+     color: white;
+     font-size: 12px;
+     padding: 10px;
+     border: none;
+     background-color: green;
+     border-radius: 6px;
+     float: left;
+     cursor: pointer;
+   }
+   /*style the facebook icon*/
+   .facebook i{
+     color: white;
+     font-size: 12px;
+     padding: 10px;
+     border: none;
+     background-color: blue;
+     border-radius: 6px;
+     float: right;
+     margin-left: 20px;
+     cursor: pointer;
+   }
+   /*style the text between*/
+   .txt p{
+     color: black;
+     padding: 3px;
+     text-align: center;
+     float: right;
+     margin-left: 20px
+   }
+   
