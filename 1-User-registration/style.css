@@ -90,6 +90,7 @@ body
     color: rgb(15, 34, 15);
     margin-bottom: 5px;
     font-size: 12px;
+    font-weight: bold;
 }
 
 /*styling the inputs*/
@@ -97,7 +98,7 @@ body
 {
     width: 300px;
     padding: 12px 10px ;
-    border: 2px solid white;
+    border: none;
     border-radius: 5px;
     display: block;
     line-height: 20px;

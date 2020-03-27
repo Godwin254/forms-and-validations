@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skyton Validator</title>
     <script src="https://kit.fontawesome.com/a9f6e9c98f.js" crossorigin="anonymous"></script>
+    <script defer src="validate.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="validate.js"></script>
+    
 </head>
 <body>
   <!--my login form-->
 <!--contains the whole page-->
+
   <div class="main-container">
 
     <!--contains the navigation bar-->
@@ -29,11 +31,12 @@
 
     <!--contains the form-->
     <div class="main-form">
+      
+        <form action="#"  class="my-form" id="form1" method="GET" >
 
-        <div id="error"></div>
-        <form action="#"  class="my-form" method="POST">
+            <h3  style="text-align: center; color: blue;" class="congrats">Create account</h3>
 
-            <h3  style="text-align: center; color: blue;">Create account</h3>
+            <div class="alert-msg" style="color: red;text-align: center;"></div>
 
             <label for="uname">Username</label>
             
@@ -60,7 +63,7 @@
             <label for="check_box">agree to terms</label>
            -->
             <div class="btn-container">
-               <button type="button"  id="btn1" class="btnx">Sign up</button>
+               <button type="submit"  id="btn1" class="btnx" onclick="verify();">Sign up</button>
                <a href="#" id="btn2" class="btn-link" style="font-size: smaller;">Forgot password</a>
             </div>
         </form>
