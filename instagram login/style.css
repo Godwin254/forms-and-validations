@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Yesteryear&display=swap');
+
+*{
+     padding: 0;
+     margin: 0;
+}
+body{
+     background-color: rgb(245, 237, 237);
+     color: #000;
+     font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+     margin:  0 auto;
+     /*border: 1px solid black;*/
+     width: 25%;
+     display: block;
+     position: relative;
+}
+.section1{
+     margin:  40px auto;
+     margin-bottom: 10px;
+     border: 1px solid rgb(223, 205, 205);
+     border-radius: 2px;
+     min-width: 40%;
+     display: block;
+     position: relative;
+     box-sizing: border-box;
+     background-color: #fff;
+     min-height: 20em;
+}
+.section1 .title h3{
+     text-align: center;
+     margin-top: 10px;
+     padding: 5px;
+     font-family: 'Yesteryear', cursive;
+     font-size: 30px;
+
+}
+.section1 .my-inputs input{
+     display: block;
+     padding: 8px;
+     margin: 10px auto;
+     width: 80%;
+     border: 1px solid rgb(224, 224, 231);
+     border-radius: 4px;
+     font-size: 12px;
+}
+.section1 .my-inputs input[type = button]{
+     color: white;
+     border-radius: 5px;
+     padding: 5px;
+     font-size: 15px;
+     cursor: pointer;
+     background-color: rgb(171, 171, 233);
+}
+.section1 .my-inputs input[type = button]:hover{
+     background-color: rgb(148, 148, 207);
+}
+.section1 .alter h4{
+     text-align: center;
+     padding: 5px;
+     margin-top: 20px;
+     font-size: 13px;
+     line-height: 0.5;
+     display: flex;
+     flex-direction: row;
+}
+.section1 .alter h4::before,
+h4::after{
+     content: "";
+     flex: 4 4;
+     border-bottom: 1px solid rgba(32, 25, 25, 0.219);
+     margin: 0 15px;
+     
+}
+.section1 .facebook{
+     display: block;
+     margin: 10px ;
+     text-align: center;
+}
+.section1 .facebook .fa-facebook-square, .pface{
+     display: inline-block;
+     margin: 10px auto;
+     text-align: center;
+     font-size: 14px;
+     font-weight: bold;
+     color: rgb(107, 107, 199);
+     cursor: pointer;
+     
+}
+.section1 .forget a{
+     display: block;
+     margin: 0 auto;
+     text-decoration: none;
+     font-size: small;
+     text-align: center;
+}
+
+/*section 2*/
+.section2{
+     margin:  10px auto;
+     border: 1px solid rgb(223, 205, 205);
+     border-radius: 2px;
+     min-width: 40%;
+     display: block;
+     position: relative;
+     box-sizing: border-box;
+     background-color: #fff;
+     padding: 20px;
+     
+}
+.section2 p{
+     display: block;
+     font-size: 15px;
+     text-align: center;
+}
+.section2 a{
+   
+     font-size: 15px;
+     font-weight: bolder;
+     text-decoration: none;
+     text-align: center;
+}
+/*section 3*/
+.section3{
+     margin:  10px auto;
+     border: none;
+     border-radius: 2px;
+     padding: 15px;
+     min-width: 40%;
+     display: block;
+     position: relative;
+     box-sizing: border-box;
+     display: block;
+     
+}
+.section3 .text p{
+     text-align: center;
+     font-size: 15px;
+}
+.appstore{
+     
+     display: inline-block;
+     background-color: black;
+     color: white;
+     margin-top: px;
+     padding: 10px;
+     width: 40%;
+     border: none;
+     border-radius: 3px;
+     min-width: 20px;
+     height: 22px;
+}
+.playstore{
+     
+     display: inline-block;
+     background-color: rgb(0, 0, 0);
+     color: white;
+     margin-top: 8px;
+     padding: 10px;
+     width: 40%;
+     border: none;
+     border-radius: 3px;
+     min-width:  20px;
+     height: 22px;
+}
+.bottom-nav{
+     margin:  5px auto;
+     border: 1px solid rgb(223, 205, 205);
+     border-radius: 2px;
+     min-width: 30%;
+     display: block;
+     position: relative;
+     box-sizing: border-box;
+     background-color: #fff;
+     padding: 20px;
+     align-items: baseline;
+     
+}
+
+.bottom-nav a{
+     display: inline-block;
+     text-decoration: none;
+     text-align: center;
+     font-size: 15px;
+     text-transform: capitalize;
+     padding: 1px;
+     margin-top: 10px 0 0 0;
+
+}
+@media screen and (min-width: 360px){
+     .container{
+          width: 300px;
+     }
+}
+
+@media screen and (min-width: 260){
+     .container{
+          width: 414px;
+          margin:  0;
+          height: 100em;
+     }
+}
