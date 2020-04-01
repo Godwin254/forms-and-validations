@@ -1,64 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     background-image: url(screen-3.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    width: fit-content;
-    height: fit-content;
-    color: yellowgreen;
-    background-position: center;
-}
-div.container{
-    display: flex;
-    flex-direction:column;
-    align-content: space-between;
-    width: 150%;
-    height: 400px;
-    border: 1px solid gold;
-    border-radius: 10px;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 100%;
-    margin-top: 50%;
-    opacity: 0.9;
-}
-input[type=text]{
-    width: 60%;
-    padding: 8px 70px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 10px;
-}
-input[type=password]{
-    width: 60%;
-    padding: 8px 70px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 10px;
-}
-input[type=submit]{
-    width: 40%;
-    padding: 10px 30px;
-    margin: px 0;
-    box-sizing: border-box;
-    border-radius: 5px;
-    
     color: white;
-    background-color: rgb(13, 13, 150);
+    background-position: center center;
+}
+.container{
+    display: block;
+    position: relative;
+    
+
+}
+.container .form1{
+    display: block;
+    position: relative;
+    width: 30%;
+    margin: 10% auto;
+    padding: 5px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgba(17, 16, 16, 0.842);
+
+}
+.heda h2{
+    display: block;
+    position: relative;
+    text-align: center;
+    color: rgb(67, 67, 201);
+    padding: 5px;
+    margin-top: 5px;
+}
+.msg{
+    color: rgb(231, 16, 16);
+    font-weight: lighter;
+    display: none;
+}
+.container input[type=text]{
+    display: block;
+    position: relative;
+    width: 70%;
+    font-size: 15px;
+    padding: 8px;
+    margin: 6px auto;
+    border-radius: 5px;
+}
+.container input[type=password]{
+    display: block;
+    position: relative;
+    font-size: 15px;
+    width: 70%;
+    padding: 8px;
+    margin: 6px auto;
+    border-radius: 5px;
+}
+.container label{
+    display: block;
+    position: relative;
+    margin-left: 50px;
+    color: aqua;
+}
+.container input[type=submit]{
+    display: block;
+    position: relative;
+    width: 70%;
+    font-size: 15px;
+    padding: 10px 30px;
+    border: none;
+    margin: 6px auto;
+    box-sizing: border-box;
+    border-radius: 5px; 
+    color: white;
+    background-color: rgb(56, 56, 206);
     border: 0;
 }
-form{
-    align-content: center;
+.container input[type=submit]:hover{
+    background-color: blue;
 }
-.heda{
-    display: flex;
-    justify-content: center;
-    color: rgb(123, 184, 212);
-    position: relative;
-    animation-name: outrev;
-    animation: 60s;
-    animation-iteration-count: 2;
-    animation-direction: alternate;
-    
+
+@media screen and (min-width: 300px){
+    .container .form1{
+        width: 50%;
+    }
 }
