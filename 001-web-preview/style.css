@@ -1,0 +1,296 @@
+
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     
+}
+body{
+     background-color: white;
+     color: #000;
+     width: 100%;
+     
+     
+}
+.nav-bar{
+     background-color: #333;
+     padding: 15px;
+     
+     min-height: 15px;
+     
+}
+.nav-li{
+     float: right;
+}
+.nav-bar .nav-li a{
+     color: #fff;
+     text-decoration: none;
+     padding: 5px;
+     text-transform: uppercase;
+     font-size: 14px;
+    
+}
+.nav-bar .nav-li a:hover{
+     background-color: rgb(87, 152, 190);
+     color: black;
+     border-radius: 2px;
+}
+.nav-bar .logo{
+     text-decoration: none;
+     color: #fff;
+     font-weight: bolder;
+     border-left: 3px solid rgb(80, 201, 80);
+   
+}
+
+/*home area*/
+.home{
+     position: relative;
+     background-color: #fff;
+     background-position: center right;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-image: url(/images/water.jpg);
+     width: 100%;
+     height: 39em;
+    
+}
+.home h2{
+     margin: 0;
+     padding: 0;
+     text-align: center;
+     position: relative;
+     top: 40%;  
+     color: #fff;
+     text-shadow: 2px 2px  6px black ;
+     font-size: 70px;
+     text-transform: uppercase;
+     
+}
+.home p{
+     margin: 0;
+     padding: 0;
+     text-align: center;
+     position: relative;
+     top: 42%;  
+     color: rgb(8, 22, 22);
+     text-shadow: 2px 2px  5px rgb(191, 209, 28) ;
+     font-size: 20px;  
+}
+.home .btn {
+     position: sticky;
+     top: 70%;
+     text-decoration: none;
+     padding: 8px;
+     width: 2cm;
+     background-color: rgb(240, 38, 38);
+     border: none;
+     border-radius: 2px;
+     color: white;
+}
+.home .btn:hover{
+     background-color: #fff;
+     color: #000;
+     width: 3cm;
+}
+
+ /*about us area*/   
+ .about h3{
+      display: block;
+      text-align: center;
+      position: relative;
+      padding: 10px;
+      margin-top: 50px ;
+     
+ }
+.row{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     padding: 10px;
+     height: 20em;
+     margin-top: 30px;
+     
+}
+.row  h4{
+     display: block;
+     text-align: center;
+     font-size: larger;
+}
+
+/*services*/
+.port{
+     display: block;
+     position: relative;
+     background-color: rgb(27, 19, 19);
+     height: 35em;
+     min-width: 100%;
+     overflow: auto;
+}
+.port h3{
+     display: block;
+     text-transform: uppercase;
+     text-align: center;
+     padding: 10px;
+     margin-top: 50px;
+     font-size: 20px;
+     color: #fff;
+}
+.port h4{
+     color: yellowgreen;
+     display: block;
+     text-align: right;
+     font-size: 13px;
+     margin-top: 10px;
+}
+.port .aside {
+     margin: 0 auto;
+     padding: 0;
+     text-align: center;
+     position: relative;
+     top: 10%;  
+     color: #fff;
+     width: 50%;
+     
+}
+.port .aside p{
+     margin: 0;
+     padding: 0;
+     text-align: center;
+     position: relative;
+     top: 40%;  
+     color: #fff;
+     
+}
+.port  p{
+     margin: 0;
+     padding: 10px;
+     text-align: center;
+     position: relative;
+     top: 40%;  
+     color: #fff;
+     border-left: 6px solid yellowgreen;
+  
+}
+.port .pic{
+     display: grid;
+     position: relative;
+     grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+     padding: 5px;
+     top: 22%;
+}
+.port .pic img{
+     border: none;
+     border-radius: 2px;
+     margin: 2px;
+     height: 10em;
+}
+/*contact us area*/
+.contact{
+     display: block;
+     position: relative;
+     margin: 0;
+     padding: 0;
+     background-position: center ;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-image: url(/images/cont.jpg);
+     width: 100%;
+     background-color: #fff;
+     height: 20em;
+     
+}
+.reach{
+     display: grid;
+     grid-template-columns: 1fr 2fr 1fr;
+     margin: 0 auto;
+    
+}
+.contact .myform{
+     display: block;
+     position: relative;
+     padding: 10px;
+     margin: 0 auto;
+     border: none;
+     border-radius: 3px;
+     background-color: rgba(39, 34, 34, 0.644);
+     top: 10%;
+    
+
+}
+.myform input{
+     display: block;
+     padding: 5px;
+     margin: 5px;
+     border: 1px solid rgb(196, 168, 168);
+     border-radius: 4px;
+     font-size: 14px;
+     
+}
+.myform textarea{
+     display: block;
+     padding: 5px;
+     margin: 5px;
+     border: 1px solid rgba(196, 168, 168, 0.801);
+     border-radius: 4px;
+     font-size: 15px;
+     
+}
+.myform input[type = button]{
+     color: #fff;
+     width: 2cm;
+     background-color: rgb(52, 82, 94);
+     border: none;
+     
+
+}
+.myform input[type = button]:hover{
+     background-color: rgb(82, 82, 230);
+}
+/*footer*/
+.footer{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     height: 10em;
+     background-color: rgb(46, 42, 42);
+}
+.footer .social{
+     display: block;
+     position: relative;
+
+}
+.footer .social i{
+     display: block;
+     position: relative;
+     left:10px;
+     top: 25%;
+     padding: 3px;
+}
+.subscribe{
+     display: block;
+     position: relative;
+     top: 20%;
+     left: 10%;
+
+}
+.subscribe h4{
+     display: block;
+     position: relative;
+     color: white;
+     font-size: 15px;
+     margin: 5px;
+    
+}
+.subscribe input{
+     padding: 4px;
+     position: relative;
+     display: inline-block;
+     margin: 1px;
+     border: 1px solid rgb(207, 193, 193);
+     border-radius: 4px;
+     
+}
+.subscribe input[type = button]{
+     background-color: rgb(245, 13, 13);
+     color: white;
+     border: none;
+}
