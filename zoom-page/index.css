@@ -1,0 +1,281 @@
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+body{
+     font-size: 14px;
+     position: relative;
+     font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+     position: relative;
+
+}
+.topbar{
+     position: relative;
+     background-color: rgb(51, 37, 37);
+     color: #ffffff;
+     height: 30px;
+     
+}
+
+.topbar p{
+     position: relative;
+     color: rgb(212, 198, 198);
+     text-align: center;
+     top: 15%;
+     
+}
+/*navigation section*/
+.mainbar{
+     position: relative;
+     background-color: rgb(239, 235, 243);
+     max-height: 1.5cm;
+}
+/*navigation button on the center*/
+.mainbar .navigation{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     width: 35%;
+     padding: 5px;
+     margin:  0 auto;
+     height: 1.5cm;
+}
+.home{
+     color: rgba(14, 12, 12, 0.548);
+     padding: 10px;
+     margin: 25px;
+}
+.home:hover{
+     color: rgba(0, 0, 0, 0.753);
+}
+.home i{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    
+}
+.home p{
+     font-size: 12px;
+     color: rgba(14, 12, 12, 0.712);
+     margin-top: 5px;
+}
+/*search bar*/
+.mainbar .search{
+     position: absolute;
+     top: 30%;
+     height: 0.8cm;
+     width: 4cm;
+     background-color: rgb(225, 219, 230);
+     border-radius: 10px;
+     left: 83%;
+}
+.mainbar .search input[type = text]{
+     position: absolute;
+     padding: 5px;
+     border: none;
+     border-radius: 5px;
+     width: 3.4cm;
+     border-radius: ;
+     background-color: rgb(225, 219, 230);
+     left: 10%;
+     top: 10%;
+}
+.mainbar .search i{
+     position: absolute;
+     top: 20%;
+     color: rgba(22, 22, 26, 0.589);
+}
+
+/*users profile/active*/
+.profile{
+     position: absolute;
+     left: 96%;
+     top: 20%;
+     border: none;
+     border-radius: 30%;
+}
+.profile img{
+     border: none;
+     border-radius: 30%;
+     
+}
+.profile::after{
+     content: "";
+     position: absolute;
+     top: -7%;
+     right: -2px;
+     width: 10px;
+     height: 10px;
+     background-color: rgb(240, 16, 16);
+     border: 2px solid #fff;
+     border-radius: 50%;
+}
+/*settings icon*/
+.setting {
+     position: absolute;
+     left: 98%;
+     bottom: 70%;
+     cursor: pointer;
+}
+
+/*main body section*/
+.section{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+}
+
+/*main section/ navigation icons*/
+.icon_section{
+     position: relative;
+    margin-left: 50%;
+     top: 50%;
+     
+}
+.icons{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     align-content: space-between;
+     width: 40%;
+     
+     
+}
+.icons .icon{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 2.5cm;
+     height: 2.5cm;
+     padding: 10px;
+     margin: 20px;
+     border-radius: 30%;
+}
+.icon i{
+
+     color: white;
+     padding: 10px;
+     
+}
+.icons .icon1{
+     background-color: rgba(221, 147, 11, 0.836);
+}
+.icons .icon2{
+     background-color: rgba(91, 119, 241, 0.849);
+}
+.icons .icon3{
+     background-color: rgba(57, 114, 179, 0.938);
+}
+.icons .icon4{
+     background-color: rgba(104, 102, 219, 0.884);
+}
+.icons p{
+     position: relative;
+     text-align: center;
+     font-size: 14px;
+     top: -7%;
+}
+
+/*schedule /time screen*/
+.schedule .notify{
+     display: grid;
+     grid-template-rows: 0.5fr 1fr;
+     position: absolute;
+     background-color: #fff;
+     width: 22%;
+     border-radius: 5px;
+     box-shadow: 0.5px 0.5px 9px rgba(8, 8, 24, 0.192);
+     height: 11cm;
+     top: 50%;
+}
+.schedule .notify .screen{
+     border: none;
+
+     border-radius: 5px;
+     background-image: url();
+     background-color: rgba(26, 26, 58, 0.87);
+}
+.notify .screen .time{
+     position: absolute;
+     left: 25%;
+     top: 10%;
+     color: rgb(255, 255, 255);
+     font-size: 2em;
+}
+.notify .screen .date{
+     position: absolute;
+     left: 20%;
+     top: 21%;
+     font-size: 14px;
+     color: #fff;
+}
+.schedule .notify .meetings p{
+    position: absolute;
+    left: 21%;
+    bottom: 32%;
+    font-size: 14px;
+}
+
+/*responsiveness*/
+@media screen and (max-width: 994px){
+     .topbar{
+          width: 100%;
+     }
+     .mainbar{
+          width: 100%;
+     }
+}
+
+@media screen and (max-width: 780px){
+     .topbar{
+          width: 100%;
+     }
+     .mainbar{
+          width: 100%;
+     }
+}
+
+@media screen and (max-width: 640px){
+     .topbar{
+          width: 100%;
+     }
+     .mainbar{
+          width: 100%;
+     }
+}
+
+@media screen and (max-width: 520px){
+     body{
+          width: auto;
+          height: auto;
+     }
+     .topbar{
+          display: none;
+          width: 100%;
+     }
+
+     .mainbar{
+          display: flex;
+          justify-content: center;
+          align-items: baseline;
+          width: auto;
+          position: absolute;
+          background-color: rgb(239, 235, 243);
+          max-height: 1.5cm;
+          bottom: -115%
+     }
+     .search{
+          display: none;
+     }
+     .profile{
+          display: none;
+     }
+     .setting{
+          display: none;
+     }
+     .schedule{
+          display: none;
+     }
+}
