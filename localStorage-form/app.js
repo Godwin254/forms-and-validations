@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	let name2 = document.querySelector(".name2");
 	let age = document.querySelector(".age");
 	let sex = document.querySelector(".gender");
-	let display = document.querySelector(".out");
+	let display = document.querySelector(".display");
 	let alert = document.querySelector(".alert");
 	
 	//store value of input when button is clicked
@@ -22,13 +22,6 @@ document.addEventListener('DOMContentLoaded', function(){
 		var pGender = sex.value;
 		let msg = "";
 		
-		//prevent empty values
-		if (fname === "" && fname.length < 3 ){
-			msg = "enter first name!!"
-			alert.style.display = true;
-			alert.innerHtml = msg;
-			
-		}
 		
 		var Person = {
 							"firstName": fname,
@@ -41,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		
 		//log into the console
 		console.log(Person);
-		console.log(localStorage);
+          console.log(localStorage);
 	
 	});
 	
@@ -54,8 +47,30 @@ document.addEventListener('DOMContentLoaded', function(){
 		//retrieve the values in the storage
 		let retrieved = JSON.parse(localStorage.getItem("templer"));
 		
-		display.innerHTML = "";
-		console.log(retrieved)
+          
+          for (let psn in retrieved){
+
+               //console.log(`${psn}:  ${retrieved[psn]}`);
+               //console.log("Hello" +" " +retrieved.firstName);
+            
+          }
+        
+          //alert to user
+		alert.style.visibility = "visible";
+          alert.innerHTML = `Saved!! ${retrieved.firstName}`
+
+          //output retrieved details
+          let olist = document.createElement("ol");
+          let list = document.createElement("li");
+          olist.appendChild(list);
+          let text = document.createTextNode(`name: ${retrieved.firstName} ${retrieved.lastName} \n age: ${retrieved.age}  \n Gender: ${retrieved.gender}`);
+          list.appendChild(text);
+
+          display.style.visibility = "visible";
+          display.appendChild(olist)
+
+          console.log(list)
+         
 	});
 
 
