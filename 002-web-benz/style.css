@@ -1,0 +1,148 @@
+*{
+     padding: 0;
+     margin: 0;
+}
+
+/*home screen*/
+.home-screen{
+     position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     background: #000 url(/images/Mercedes-Benz-Explained-gear-patrol-lead-full.jpg);
+     background-position: center center;
+     background-size: cover;
+     height: 670px;
+}
+.overlay{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 670px;
+     background: #000;
+     opacity: 0.4;
+}
+.home{
+     z-index: 1;
+}
+/*title*/
+.home h1{
+     font-size: 5pc;
+     color: #ffffff;
+}
+/*search bar*/
+.search{
+     display: flex;
+     margin-top: 20px;
+}
+input[type=text]{
+     font-size: 20px;
+     height: 1.5cm;
+     flex: 3;
+     border: none;
+     border-radius: 3px 0 0 3px;
+}
+::placeholder{
+     text-align: center;
+}
+input[type=submit]{
+     font-size: 24px;
+     height: 1.5cm;
+     flex: 1;
+     border: none;
+     background-color: yellowgreen;
+     cursor: pointer;
+}
+input[type=submit]:hover{
+     background-color: rgb(173, 238, 42);
+}
+
+/*social icons*/
+.social{
+     position: absolute;
+     display: flex;
+     justify-content: space-around;
+     bottom: 15%;
+     left: 40%;
+     border: none;
+     height: 3pc;
+     width: 20%;
+}
+.icon{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 3.2pc;
+     height: 3.2pc;
+     border: none;
+     border-radius: 50%;
+     background-color: #ffffff;
+     cursor: pointer;
+     
+}
+.icon:nth-child(1){
+     color: white;
+     background-color: #4937e662;
+}
+.icon:nth-child(2){
+     color: white;
+     background-color: #1d06f138;
+}
+.icon:nth-child(3){
+     color: white;
+     background-color: #2954c962;
+}
+/*hover property*/
+.icon:nth-child(1):hover{
+     color: #4837e6;
+     background-color: #ffffff;
+}
+.icon:nth-child(2):hover{
+     color: #1e06f1;
+     background-color: #ffffff;
+}
+.icon:nth-child(3):hover{
+     color: #2954c9;
+     background-color: #ffffff;
+}
+
+/*ABOUT SCREEN*/
+.about-screen{
+     position: relative;
+     width: 100%;
+     height: 670px;
+     background: #1d06f138 url(/images/22Mercedes-BenzE-Classm.jpg) no-repeat;
+     background-position: center center;
+     background-size: cover;
+     color: #ffffff;
+     display: flex;
+}
+.about h1{
+     position: absolute;
+     top: 30%;
+     left: 10%;
+     font-size: 3pc;
+}
+.about p{
+     position: absolute;
+     top: 40%;
+     left: 10%;
+     width: 43%;
+     
+}
+.about input[type=submit]{
+     position: absolute;
+     top: 60%;
+     left: 12%;
+     width: 20%;
+     border-radius: 3px;
+     color: #ffffff;
+}
+.about i{
+     position: absolute;
+     top: 63.5%;
+     left: 28%;
+     color: white;
+}
